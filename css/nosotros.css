@@ -1,0 +1,79 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #80d89a;
+}
+
+.logo input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 420px;
+}
+
+.logo button {
+  background-color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  margin-left: 9px;
+}
+
+.logo button img {
+  width: 20px;
+  height: 20px;
+}
+
+.menu {
+  background-color: #b0ea9f;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.text {
+  color: #000000;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 0;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.parrafo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 40px;
+  margin-right: 180px;
+  margin-left: 180px;
+}
