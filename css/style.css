@@ -24,6 +24,10 @@
   justify-content: center;
   border-radius: 9px;
   margin-left: 9px;
+  background-color: #007bff; /* Tomando el color más reciente */
+  color: white; /* Tomando el color más reciente */
+  border-radius: 4px; /* Tomando el border-radius más reciente */
+  font-size: 1em; /* Tomando el font-size más reciente */
 }
 
 .logo button img {
@@ -68,6 +72,10 @@
 .menu a:hover::after {
   width: 100%;
 }
+.imgg {
+  max-width: 100%; /* Hace que la imagen no sea más ancha que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
 
 .card {
   background: #80d89a;
@@ -108,4 +116,98 @@
   align-items: center;
   height: 100vh;
   gap: 35px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    padding: 20px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .logo input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .logo button {
+    margin-left: 0;
+    border-radius: 5px;
+  }
+
+  .menu {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .menu a {
+    padding: 5px 8px;
+    font-size: 0.9em;
+  }
+
+  .centrar {
+    flex-direction: column; /* Apilar las tarjetas en pantallas pequeñas */
+    height: auto; /* Ajustar la altura automáticamente */
+    padding: 20px; /* Añadir un poco de padding general */
+    gap: 20px; /* Reducir el espacio entre las tarjetas */
+  }
+
+  .card {
+    max-width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
+    margin-bottom: 20px; /* Añadir espacio entre las tarjetas apiladas */
+  }
+}
+
+/* Media query para pantallas aún más pequeñas (celulares) */
+@media (max-width: 480px) {
+  .logo {
+    padding: 15px;
+  }
+
+  .logo button img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .menu {
+    padding: 8px;
+    gap: 5px;
+  }
+
+  .menu a {
+    font-size: 0.8em;
+    padding: 5px 5px;
+  }
+
+  .centrar {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .card h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+
+  .whatsapp-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    border-radius: 6px;
+  }
+}
+/* Media query para pantallas de hasta 480px (celulares) */
+@media (max-width: 480px) {
+  .imgg {
+    margin-bottom: 5px; /* Reducir el margen inferior en celulares */
+  }
 }
