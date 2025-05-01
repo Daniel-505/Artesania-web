@@ -109,6 +109,25 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+main {
+  display: flex;
+  gap: 450px;
+}
+
+.whatsapp{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+.iconos{
+  display: flex;
+  gap: 20px;
+}
+
+
 /* Media query para pantallas de hasta 768px de ancho */
 @media (max-width: 768px) {
   .logo {
